@@ -9,3 +9,5 @@ point academic. This project will benefit from the use of Objet Oriented Program
 with other objects. This project is planned to be run in terminal since it will not include any graphics or sprites. The goal is to create throught OOP and C++ a fun turn based game that
 requires minimun resources and is chemistry related.
  
+This game will require OOP for creating, controlling and modifying the entities of the game like the enemies, the player, the items, the game controller, and the scenery. The player 
+will have properties like its Health Points (HP) and functions like attack or use an item. Their will be classes like Enemies and Items with its own Chemical properties like element, Polarity and electronegativity. 
