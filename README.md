@@ -10,4 +10,10 @@ with other objects. This project is planned to be run in terminal since it will 
 requires minimun resources and is chemistry related.
  
 This game will require OOP for creating, controlling and modifying the entities of the game like the enemies, the player, the items, the game controller, and the scenery. The player 
-will have properties like its Health Points (HP) and functions like attack or use an item. Their will be classes like Enemies and Items with its own Chemical properties like element, Polarity and electronegativity. 
+will have properties like its Health Points (HP) and functions like attack or use an item. Their will be classes like Enemies and Items with its own Chemical properties like element, Polarity and electronegativity. When a battle is over, the player will be given 3 objects to choose for adding to his Arsenal. When the player beats 5 enemies the game will be over. 
+
+
+
+
+
+
