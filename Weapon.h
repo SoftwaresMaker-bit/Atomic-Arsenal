@@ -4,7 +4,6 @@ class Weapon {
 
 
 private:
-
 	char name;
 	int damage;
 	char chemistry;
