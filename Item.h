@@ -5,6 +5,8 @@ class Item{
 private:
 	char name;
 	int quantity;
+	
+protected:
 	char player;
 
 public:
