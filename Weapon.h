@@ -3,14 +3,15 @@ Weapon.h
 class Weapon {
 
 
-private:
+public:
 	char name;
-	int damage;
+	int dp;
 	char chemistry;
 
 public:
-	Weapon(name);
-	int Get_damage();
+	Weapon(char,int,char);
+	char Get_name();
+	int Get_DP();
 	char Get_chemistry();
 
 
