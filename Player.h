@@ -5,13 +5,14 @@ class Player{
 private:
 	char name;
 	int HP;
-	bool turn;
-	int damage;
-	int dmultiplier;
+	int DP;
+	
 
 public:
-	Player(name);
-	void Attack();
-	void use_item();
-	void hurted(damage)
+	Player(char,int,int);
+	void Attack(DP);
+	void hurted(damage); // parameter sended by enemy
+	int Get_HP();
+	void Set_DP(_DP);
+	int Get_DP();
 }
