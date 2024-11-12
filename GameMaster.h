@@ -7,7 +7,7 @@ private:
 	int turn; // Variable for the turn of either the player or the enemy. 0 =player, 1 =enemy
 
 public:
-	GameMaster();
+	GameMaster(char,char,int);
 	void Start_Battle();
 	void Manage_turns(turn);
 	void End_Battle();
