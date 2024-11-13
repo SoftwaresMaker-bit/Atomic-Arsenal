@@ -17,7 +17,7 @@ void Enemy::Hurted(int damage, char dp_chem){
 
 }
 
-void Enemy:: Attack(int DP){
+void Enemy::Attack(int DP){
 	//function for sending damage points to the object player 
 
 }
