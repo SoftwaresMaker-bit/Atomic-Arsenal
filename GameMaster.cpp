@@ -9,7 +9,7 @@ GameMaster:: GameMaster(){
 
 void GameMaster:: StartBattle(){
 
-	turn = 0
+	turn = 0;
 
 
 }
