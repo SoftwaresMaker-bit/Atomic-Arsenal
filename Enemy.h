@@ -9,11 +9,9 @@ protected:
 	char chemistry;
 public: 
 	Enemy(char,int,int,char);
-	void Hurted(damage_received, damage_received_chemistry); // this parameters are sended by the player
-	void Attack(DP);
-	void Set_HP(_HP);
+	void Hurted(int, char); // this parameters are sended by the player
+	void Attack(int);
 	int Get_HP();
-	void Set_DP(_DP);
 	int Get_DP();
 
 }
