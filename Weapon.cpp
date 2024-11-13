@@ -6,7 +6,7 @@ Weapon.cpp
 Weapon::Weapon(char _name,int _DP, char _chemistry){
 	
 	name = _name;
-	DP = _DP;
+	dp = _dp;
 	chemistry = _chemistry;
 }
 
@@ -15,7 +15,7 @@ int Weapon::Get_name(){
 }
 
 int Weapon::Get_DP(){
-	return DP;
+	return dp;
 }
 
 
