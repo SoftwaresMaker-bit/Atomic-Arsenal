@@ -4,8 +4,8 @@ class Player{
 
 private:
 	char name;
-	int HP;
-	int DP;
+	int hp;
+	int dp;
 	
 
 public:
