@@ -3,23 +3,23 @@ GameMaster.cpp
 #include <iostream>
 #include "GameMaster.h"
 
-GameMaster:: GameMaster(){
+GameMaster::GameMaster(){
 
 }
 
-void GameMaster:: StartBattle(){
+void GameMaster::StartBattle(){
 
 	turn = 0;
 
 
 }
 
-void GameMaster:: Manage_Turns(int turn){
+void GameMaster::Manage_Turns(int turn){
 
 
 }
 
-void GameMaster:: End_Battle(){
+void GameMaster::End_Battle(){
 
 
 }
