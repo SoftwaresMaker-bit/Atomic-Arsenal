@@ -11,7 +11,7 @@ private:
 public:
 	Player(char,int,int);
 	void Attack(int);
-	void hurted(int); // parameter sended by enemy
+	void Hurted(int); // parameter sended by enemy
 	int Get_HP();
 	void Set_DP(int);
 	int Get_DP();
