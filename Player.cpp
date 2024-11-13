@@ -9,11 +9,11 @@ Player::Player(char _name, int _hp, int _dp){
 	dp = _dp;
 }
 
-void Player:: Attack(int dp){
+void Player::Attack(int dp){
 
 }
 
-void Player:: hurted(int damage){
+void Player::Hurted(int damage){
 	hp = hp - damage;
 }
 
