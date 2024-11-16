@@ -1,7 +1,11 @@
 Weapon.h
 #ifndef WEAPON_H
 #define WEAPON_H
+#include <iostream>
+#include <string>
 using namespace std;
+
+
 class Weapon {
 
 
@@ -11,10 +15,10 @@ public:
 	char chemistry;
 
 public:
-	Weapon(char _name,int _dp,char _chemistry);
-	char get_name();
+	Weapon(string _name,int _dp,string _chemistry);
+	string get_name();
 	int get_dp();
-	char get_chemistry();
+	string get_chemistry();
 
 
 
