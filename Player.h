@@ -16,7 +16,7 @@ private:
 	
 
 public:
-	Player(char name,int hp,int dp);
+	Player(char _name,int _hp,int _dp);
 	void Attack(int);
 	void Hurted(int); // parameter sended by enemy
 	int Get_HP();
