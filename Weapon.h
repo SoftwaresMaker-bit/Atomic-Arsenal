@@ -11,9 +11,9 @@ public:
 	char chemistry;
 
 public:
-	Weapon(char,int,char);
+	Weapon(char _name,int _dp,char _chemistry);
 	char Get_name();
-	int Get_DP();
+	int Get_dp();
 	char Get_chemistry();
 
 
