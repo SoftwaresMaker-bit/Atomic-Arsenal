@@ -1,4 +1,10 @@
 GameMaster.h
+#ifndef GAMEMASTER_H
+#def GAMEMASTER_H
+	
+#include <iostream>
+#include <string>
+using namespace std;
 
 class GameMaster{
 private:
@@ -11,4 +17,5 @@ public:
 	void Start_Battle();
 	void Manage_turns(int);
 	void End_Battle();
-}
+}; 
+#endif
