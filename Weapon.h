@@ -1,5 +1,7 @@
 Weapon.h
-
+#ifndef WEAPON_H
+#define WEAPON_H
+using namespace std;
 class Weapon {
 
 
@@ -17,4 +19,5 @@ public:
 
 
 
-}
+};
+#endif
