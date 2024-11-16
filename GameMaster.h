@@ -1,6 +1,6 @@
 GameMaster.h
 #ifndef GAMEMASTER_H
-#def GAMEMASTER_H
+#define GAMEMASTER_H
 	
 #include <iostream>
 #include <string>
