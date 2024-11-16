@@ -12,9 +12,9 @@ public:
 
 public:
 	Weapon(char _name,int _dp,char _chemistry);
-	char Get_name();
-	int Get_dp();
-	char Get_chemistry();
+	char get_name();
+	int get_dp();
+	char get_chemistry();
 
 
 
