@@ -17,10 +17,10 @@ private:
 
 public:
 	Player(char _name,int _hp,int _dp);
-	void Attack(int);
-	void Hurted(int); // parameter sended by enemy
-	int Get_HP();
-	void Set_DP(int);
-	int Get_DP();
+	void attack(int);
+	void hurted(int); // parameter sended by enemy
+	int get_HP();
+	void set_DP(int);
+	int get_DP();
 };
 #endif
