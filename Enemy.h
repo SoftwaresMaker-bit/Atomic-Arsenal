@@ -1,5 +1,11 @@
 Enemy.h
 
+#ifndef ENEMY_H
+#define ENEMY_H
+#include <iostream>
+#include <string>
+	
+using namespace std;
 class Enemy {
 
 protected: 
@@ -14,4 +20,5 @@ public:
 	int Get_HP();
 	int Get_DP();
 
-}
+}; 
+#endif
