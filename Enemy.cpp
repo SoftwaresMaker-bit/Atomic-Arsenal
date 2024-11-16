@@ -11,21 +11,28 @@ Enemy::Enemy(char _name,int _hp,int _dp,char _chemistry){
 	chemistry = _chemistry;
 }
 
-void Enemy::Hurted(int damage, char dp_chem){
+void Enemy::hurted(int damage, char dp_chem){
 	//function for receiving damage and update the health points
 	hp = hp-damage;
 
 }
 
-void Enemy::Attack(int DP){
+void Enemy::attack(int DP){
 	//function for sending damage points to the object player 
 
 }
 
-int Enemy::Get_HP(){
+int Enemy::get_hp(){
 	return hp;
 		}
 
-int Enemy::Get_DP(){
+int Enemy::get_dp(){
 	return dp;
 }
+
+string Enemy::get_name(){
+	return name
+}
+
+
+
