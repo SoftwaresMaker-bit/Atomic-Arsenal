@@ -14,7 +14,7 @@ int Weapon::Get_name(){
 	return name;
 }
 
-int Weapon::Get_DP(){
+int Weapon::Get_dp(){
 	return dp;
 }
 
