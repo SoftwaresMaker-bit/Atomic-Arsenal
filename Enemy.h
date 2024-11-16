@@ -15,10 +15,11 @@ protected:
 	char chemistry;
 public: 
 	Enemy(char _name,int _hp,int _dp,char _chemistry);
-	void Hurted(int, char); // this parameters are sended by the player
-	void Attack(int);
-	int Get_HP();
-	int Get_DP();
+	void hurted(int, char); // this parameters are sended by the player
+	void attack(int);
+	int get_HP();
+	int get_DP();
+	string get_name();
 
 }; 
 #endif
