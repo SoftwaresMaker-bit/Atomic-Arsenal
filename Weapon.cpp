@@ -10,16 +10,16 @@ Weapon::Weapon(char _name,int _DP, char _chemistry){
 	chemistry = _chemistry;
 }
 
-int Weapon::Get_name(){
+int Weapon::get_name(){
 	return name;
 }
 
-int Weapon::Get_dp(){
+int Weapon::get_dp(){
 	return dp;
 }
 
 
-char Weapon::Get_chemistry(){
+char Weapon::get_chemistry(){
 
 	return chemistry;
 }
