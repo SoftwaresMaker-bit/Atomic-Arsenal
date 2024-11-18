@@ -1,4 +1,4 @@
-Weapon.h
+
 #ifndef WEAPON_H
 #define WEAPON_H
 #include <iostream>
@@ -10,15 +10,16 @@ class Weapon {
 
 
 public:
-	char name;
+	string name;
 	int dp;
-	char chemistry;
+	string chemistry;
 
 public:
 	Weapon(string _name,int _dp,string _chemistry);
 	string get_name();
 	int get_dp();
 	string get_chemistry();
+	void set_info(string _name,int _dp, string _chemistry);
 
 
 

@@ -1,4 +1,3 @@
-Enemy.h
 
 #ifndef ENEMY_H
 #define ENEMY_H
@@ -9,16 +8,19 @@ using namespace std;
 class Enemy {
 
 protected: 
-	char name;
-	int hp; // Health points, enemies life 
+	string name;
+	float hp; // Health points, enemies life 
 	int dp; // Damage points send to the player class throught the attack function
-	char chemistry;
+	string chemistry;
 public: 
-	Enemy(char _name,int _hp,int _dp,string _chemistry);
-	void hurted(int, char); // this parameters are sended by the player
+	Enemy(string _name,float _hp,int _dp,string _chemistry);
+	Enemy();
+	void set_info(string _name,float _hp,int _dp,string _chemistry);
+	void hurted(int, string,int); // this parameters are sended by the player
 	void attack(int);
-	int get_HP();
-	int get_DP();
+	int get_hp();
+	int get_dp();
+	string get_chemistry();
 	string get_name();
 
 }; 
