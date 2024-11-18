@@ -14,7 +14,8 @@ will have properties like its Health Points (HP) and functions like attack or us
 
 
 
-![Completo_Clases_AA](https://github.com/user-attachments/assets/3f5d9faf-ebc2-4a70-ba9e-78e941be7370)
+![Completo_Clases_AA drawio](https://github.com/user-attachments/assets/12fddabd-2e25-4129-bdc7-bdea636c13b9)
+
 
 
 
