@@ -9,7 +9,7 @@ using namespace std;
 class Weapon {
 
 
-public:
+protected:
 	string name;
 	int dp;
 	string chemistry;
