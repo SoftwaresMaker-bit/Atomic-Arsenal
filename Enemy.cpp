@@ -49,7 +49,7 @@ void Enemy::hurted(double damage, string dp_chem,int charge = 0){
 }
 
 
-int Enemy::get_hp(){
+float Enemy::get_hp(){
 	return hp;
 		}
 string Enemy::get_chemistry(){
