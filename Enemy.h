@@ -17,7 +17,7 @@ public:
 	Enemy();
 	void set_info(string _name,float _hp,double _dp,string _chemistry);
 	void hurted(double, string,int); // this parameters are sended by the player
-	int get_hp();
+	float get_hp();
 	double get_dp();
 	string get_chemistry();
 	string get_name();
