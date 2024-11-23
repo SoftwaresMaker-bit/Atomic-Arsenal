@@ -1,7 +1,7 @@
 #include "Ion_Enemy.h"
 #include <string>
 
-Ion_Enemy::Ion_Enemy(string _name,int _hp,double _dp,string _chemistry,int _charge):Enemy(_name,_hp,_dp,_chemistry){
+Ion_Enemy::Ion_Enemy(string _name,float _hp,double _dp,string _chemistry,int _charge):Enemy(_name,_hp,_dp,_chemistry){
 	charge = _charge;
 	name = _name;
 	hp = _hp;
