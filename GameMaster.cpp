@@ -12,11 +12,11 @@ void GameMaster::set_player(string _name,int _hp){
 	player.set_info(_name,_hp);
 }
 
-void GameMaster::set_enemy(string _name,int _hp,int _dp,string _chemistry){
+void GameMaster::set_enemy(string _name,float _hp,double _dp,string _chemistry){
 	enemy.set_info(_name,_hp,_dp,_chemistry);
 }
 
-void GameMaster::set_ion_enemy(string _name,int _hp,int _dp,string _chemistry,int charge){
+void GameMaster::set_ion_enemy(string _name,float _hp,double _dp,string _chemistry,int charge){
 	ion_enemy.set_info(_name,_hp,_dp,_chemistry);
 	ion_enemy.set_charge(charge);
 }

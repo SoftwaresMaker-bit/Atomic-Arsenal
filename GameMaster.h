@@ -20,8 +20,8 @@ private:
 public:
 	GameMaster(int level );
 	void set_player(string _name,int _hp);
-	void set_enemy(string _name,int _hp,int _dp,string _chemistry);
-	void set_ion_enemy(string _name,int _hp,int _dp,string _chemistry,int charge);
+	void set_enemy(string _name,float _hp,double _dp,string _chemistry);
+	void set_ion_enemy(string _name,float _hp,double _dp,string _chemistry,int charge);
 	
 	
 	int get_level();
