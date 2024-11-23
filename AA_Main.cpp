@@ -39,7 +39,34 @@ int Option_weapon(int num){
 // function for adjusting the user weapon decision to the index of the vectors.
 
 
+void menu(){
+    cout << "Hello player, welcome to ¡Atomic Arsenal!" << endl;
+    cout << " 1. play" << endl;
+    cout << " 2. exit" << endl;
+}
+
 int main(){
+
+    
+    while(true){
+    menu();
+    int select;
+
+    while (true){
+    cin >> select;
+    if (select == 1 || select == 2){
+        break;
+    }
+    else{
+        cout << "Selection not available, try again"<< endl;
+        menu();
+    }
+
+
+                }
+    if(select==1){
+
+
 	int level;
 
 	string name;
@@ -176,7 +203,14 @@ while (true) { // Ciclo de batalla
     
 }
 	}
+} // if play parenthesis
 
+else{
+    cout << "Ending...." << endl;
+    break;
+}
+
+} // Game While parenthesis 
 
 
 
