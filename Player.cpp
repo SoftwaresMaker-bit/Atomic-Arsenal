@@ -3,22 +3,52 @@
 #include <iostream>
 #include "Player.h"
 
-Player::Player(string _name, int _hp, int _dp){
+Player::Player(string _name, int _hp){
 	name = _name;
 	hp = _hp;
-	dp = _dp;
+	
 
-	weapon_1.set_info("Water_Sword", 30,"DIP")
-	weapon_2.set_info("Oil_Gun", 20,"DI")
+	
 }
 
 Player::Player(){
 	
 }
 
-void Player::attack(int dp){
+
+
+// Metodos de inventario de armas
+
+void Player::add_weapon(const Weapon& weapon) {
+    weapons.push_back(weapon);
+}
+
+// Devuelve referencia a un arma (modificable)
+Weapon& Player::get_weapon(size_t index) {
+    return weapons.at(index); // Usa at() para evitar accesos fuera de rango
+}
+
+
+// Devuelve el número de armas
+size_t Player::get_weapon_count() const {
+    return weapons.size();
 
 }
+
+
+//Metodos de Ion_weapon 
+
+void Player::add_ion_weapon(const Ion_Weapon& ion_weapon) {
+    ion_weapons.push_back(ion_weapon);
+}
+
+// Devuelve referencia a un arma (modificable)
+Ion_Weapon& Player::get_ion_weapon(size_t index) {
+    return ion_weapons.at(index); // Usa at() para evitar accesos fuera de rango
+
+}
+
+
 
 void Player::hurted(int damage){
 	hp = hp - damage;
@@ -28,22 +58,30 @@ int Player::get_hp(){
 	return hp;
 }
 
-void Player::set_dp(int _weapon){
-	if(_weapon == 1){
-		dp = weapon_1.get_dp();
-	}
-	else if(_weapon == 2){
-		dp = weapon_2.get_dp();
-	}
+string Player::get_name(){
+	return name;
+}
+
+
+void Player::set_info(string _name,int _hp){
+	name = _name;
+	hp = _hp;
 	
 }
 
-int Player::get_dp(){
-	return dp;
-}
 
-void Player::set_info(string _name,int _hp,int _dp){
-	name = _name;
-	hp = _hp;
-	dp = _dp;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

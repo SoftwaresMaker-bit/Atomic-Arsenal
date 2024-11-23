@@ -4,7 +4,9 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 #include "Weapon.cpp"
+#include "Ion_Weapon.cpp"
 using namespace std;
 
 	
@@ -13,23 +15,30 @@ class Player{
 private:
 	string name;
 	int hp;
-	int dp;
 	
-	Weapon weapon_1;
-	Weapon weapon_2;
-	
+	std::vector<Weapon> weapons; // vector para las armas del jugador
+	std::vector <Ion_Weapon> ion_weapons; // Crea una instancia de Ion_Weapon
 
 public:
-	Player(string _name,int _hp,int _dp);
+	Player(string _name,int _hp);
 	Player();
 
-	void set_info(string _name,int _hp,int _dp);
-	void attack(int);
+	void set_info(string _name,int _hp);
 	void hurted(int); // parameter sended by enemy
 	
 	int get_hp();
-	void set_dp(int);
-	int get_dp();
+	string get_name();
+
+	//Ion_Weapon functions
+	void add_ion_weapon(const Ion_Weapon& weapon);
+	Ion_Weapon& get_ion_weapon(size_t index);
+
+	//Metodos para armas
+
+	void add_weapon(const Weapon& weapon); // Agrega un arma al jugador.
+    Weapon& get_weapon(size_t index); // Devuelve referencia a un arma.
+    size_t get_weapon_count() const; // Devuelve la cantidad de armas del jugador.
+	
 
 	
 };

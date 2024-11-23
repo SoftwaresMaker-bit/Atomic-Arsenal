@@ -6,23 +6,37 @@
 #include <string>
 #include "Player.cpp"
 #include "Enemy.cpp"
+#include "Ion_Enemy.cpp"
 using namespace std;
 
 class GameMaster{
 private:
 	Player player;
 	Enemy enemy;
-	int turn; // Variable for the turn of either the player or the enemy. 0 =player, 1 =enemy
+	Ion_Enemy ion_enemy;
+	int level;
+	int turn;
 
 public:
-	GameMaster(int turn);
-	void set_player(string _name,int _hp,int _dp);
+	GameMaster(int turn,int level );
+	int get_turn();
+	void set_player(string _name,int _hp);
 	void set_enemy(string _name,int _hp,int _dp,string _chemistry);
-	void Start_Battle();
-	void Manage_turns(int turn);
-	void End_Battle();
+	void set_ion_enemy(string _name,int _hp,int _dp,string _chemistry,int charge);
+	
+	
+	int get_level();
 	Player& get_player();
 	Enemy& get_enemy();
+	Ion_Enemy& get_ion_enemy();
+
+	//Battle methods
+	void Start_Battle(); // sets the turn to 0
+	void Manage_turns(); // changes the turn 
+
+	string Attack_P2E(int weapon ,int type, int level); // second parameter is for the type of weapon 0 for normal weapon, 1 for Ion weapons.
+	string Attack_E2P(int level);
+
 
 }; 
 #endif

@@ -11,9 +11,9 @@ private:
 	int charge;
 
 public:
-
-	Ion_Weapon(string _name,int _DP, string _chemistry,int _charge);
+	Ion_Weapon(string _name,double _DP, string _chemistry,int _charge);
 	int get_charge();
 	void set_charge(int _charge);
+	string get_info();
 };
 #endif
