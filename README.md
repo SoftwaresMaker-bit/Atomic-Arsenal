@@ -13,7 +13,7 @@ This game will require OOP for creating, controlling and modifying the entities 
 will have properties like its Health Points (HP) and functions like attack or use an item. Their will be classes like Enemies and Items with its own Chemical properties like element, Polarity and electronegativity. When a battle is over, the player will be given 3 objects to choose for adding to his Arsenal. When the player beats 5 enemies the game will be over. 
 
 
-![Completo_Clases_AA drawio](https://github.com/user-attachments/assets/d11c9ae0-b085-4a80-9b2b-6856c81626e7)
+![Completo_Clases_AA drawio](https://github.com/user-attachments/assets/4b4c388b-b9b5-4177-8a6b-ad47524d4867)
 
 
 
