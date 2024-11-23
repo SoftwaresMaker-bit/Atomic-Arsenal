@@ -11,7 +11,7 @@ private:
 	int charge;
 
 public:
-	Ion_Enemy(string _name,int _hp,double _dp,string _chemistry,int _charge);
+	Ion_Enemy(string _name,float _hp,double _dp,string _chemistry,int _charge);
 	Ion_Enemy();
 	int get_charge();
 	void set_charge(int _charge);
