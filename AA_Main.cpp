@@ -6,7 +6,7 @@ using namespace std;
 
 #include "GameMaster.cpp"
 
-GameMaster GM(0,1); //Creamos al Game_Master. Se crean Player y Enemy con valores default 0.
+GameMaster GM(1); //Creamos al Game_Master. Se crean Player y Enemy con valores default 0.
 Player& player_1 = GM.get_player();
 Enemy& enemy_1 = GM.get_enemy();
 Ion_Enemy& ion_enemy_1 = GM.get_ion_enemy();

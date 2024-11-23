@@ -3,8 +3,7 @@
 #include <iostream>
 #include "GameMaster.h"
 
-GameMaster::GameMaster(int _turn, int _level){
-	turn = _turn;
+GameMaster::GameMaster( int _level){
 	level = _level;
 }
 
@@ -23,9 +22,6 @@ void GameMaster::set_ion_enemy(string _name,int _hp,int _dp,string _chemistry,in
 }
 
 
-void GameMaster::Start_Battle(){
-	turn = 0;
-}
 
 string GameMaster::Attack_P2E(int weapon, int type, int level){
 	string name;
@@ -88,19 +84,8 @@ string GameMaster::Attack_E2P(int level){
 	return data;
 }
 
-void GameMaster::Manage_turns(){
-	if (turn == 0){
-		turn = 1;
-	}
-	else{
-		turn = 0;
-	}
 
-}
 
-int GameMaster::get_turn(){
-	return turn;
-}
 
 int GameMaster::get_level(){
 	return level;
